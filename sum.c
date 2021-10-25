@@ -13,25 +13,25 @@ void main()
 	int index[n];
 	int sub_array[n];
 	int final_sum,count_index,flag=0;
-	for(int i=0; i<n; i++)	//2
+	for(int i=0; i<n; i++)	
 	{
-		final_sum=a[i];	//4
-		count_index=0;	//
-		sub_array[count_index]=a[i];	//s[0]=4
-		index[count_index]=i; //i[0]=2 
+		final_sum=a[i];	
+		count_index=0;	
+		sub_array[count_index]=a[i];	
+		index[count_index]=i; 
 		if(final_sum==target)
 		{
 			flag=1;
 			count_index++;
 			break;
 		}
-		for(int j=i+1; j<n; j++)//3
+		for(int j=i+1; j<n; j++)
 		{
-			final_sum+=a[j];	//13
+			final_sum+=a[j];	
 			if(final_sum>target)
-				break;		//count_index=1
-			sub_array[++count_index]=a[j];	//s[1]=9
-			index[count_index]=j;		//i[1]=3			
+				break;		
+			sub_array[++count_index]=a[j];	
+			index[count_index]=j;					
 			if(final_sum==target)
 			{
 				flag=1;
@@ -45,10 +45,11 @@ void main()
 		printf("Not possible to obtain the sum\n");
 	else
 	{
+		printf("The sub array is \n");
 		for(int i=0; i<=count_index; i++)
 			printf("%d " , sub_array[i]);
 		printf("\n");
-		printf("%d %d" , index[0] , index[count_index-1]);
+		printf("The indices are %d %d" , index[0] , index[count_index-1]");
 	}
 	
 }
