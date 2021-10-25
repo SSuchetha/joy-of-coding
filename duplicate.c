@@ -8,6 +8,7 @@ void main()
 	printf("Enter array elements\n");
 	for(int i=0; i<n; i++)
 		scanf("%d" , &arr[i]);
+	
 	int index=1;
 	for(int i=0; i<n; i++)
 	{
@@ -21,6 +22,7 @@ void main()
 		}
 
 	}
+	
 	if(index==0)
 		printf("Array not distinct\n");
 	else
