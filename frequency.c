@@ -7,6 +7,7 @@ void main()
 	printf("Enter array elements\n");
 	for(int i=0; i<n; i++)
 		scanf("%d" , &arr[i]);
+	
 	for(int i=0; i<n; i++)
 	{
 		for(int j=i+1; j<n; j++)
@@ -19,6 +20,7 @@ void main()
 			}
 		}
 	}	
+	
 	int f=0;
 	for(int i=0; i<n; i=i+f)
 	{
